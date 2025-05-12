@@ -12,7 +12,6 @@ def jugar_sudoku(puntaje, rondas_ganadas):
         print("El puntaje debe ser un número entero. Usando 0 como valor por defecto.")
         puntaje = 0
         
-    # Elegir tipo de visualización
     print("\nSelecciona tipo de visualización:")
     print("1. Numérico (1-4)")
     print("2. Letras (A-D)")
@@ -33,7 +32,6 @@ def jugar_sudoku(puntaje, rondas_ganadas):
         tipo_visualizacion = "numeros"
         valores_validos = ["1", "2", "3", "4"]
 
-    # Elegir dificultad
     print("\nSelecciona nivel de dificultad:")
     print("1. Fácil (6 vacías)")
     print("2. Difícil (10 vacías)")
@@ -46,7 +44,6 @@ def jugar_sudoku(puntaje, rondas_ganadas):
         print("Opción inválida. Se usará nivel fácil por defecto.")
         dificultad = "facil"
 
-    # Obtener tablero inicial
     tablero = obtener_tablero(dificultad, tipo_visualizacion)
 
     while True:
